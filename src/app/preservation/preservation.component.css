@@ -1,0 +1,32 @@
+/* .card {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    min-width: 0;
+    word-wrap: break-word;
+    background-color: #fff;
+    background-clip: border-box;
+    border: 1px solid rgba(0,0,0,.125);
+    border-radius: 0.25rem;
+    width: 600px;
+    height: fit-content;
+    float: right;
+    margin-right: 90px;
+}*/
+ img{
+    border-radius: 50px;
+    height: 275px;
+    width: 600px;
+    transform: translateY(15%);
+    animation: 1s ease-out 0s 1 slideUpFromBottom;
+} 
+#front{
+    margin-top: 100px;
+}
+.head{
+    margin-top: 50px;
+}
+#detail{
+    margin-top: 50px;
+    padding: 30px;
+}
