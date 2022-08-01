@@ -26,18 +26,18 @@
             <span class="line line3"></span>
         </div>
         <ul class="menu-items">
-            <li><button class="dropbtn">About</button></li>
+            <li><button class="dropbtn" (click)="aboutroute()" (mouseover)="ndisp()">About</button></li>
             <li>
                 <div class="dropdown">
-                    <button class="dropbtn">Services <i class='fas fa-angle-down'></i></button>
-                    <div class="dropdown-content">
-                        <a href="#">Inspection Quality Check</a>
-                        <a href="#">Preservation Work Order Quality Check</a>
-                        <a href="#">Estimate Creation or Bid Submission</a>
-                        <a href="#">Property Level Review</a>
-                        <a href="#">Landscaping Management / Seasonal Activities</a>
-                        <a href="#">Verbal and Written Communication</a>
-                        <a href="#">Value Added Services</a>
+                    <button class="dropbtn" (mouseover)="disp()">Services <i class='fas fa-angle-down'></i></button>
+                    <div class="dropdown-content" (mouseleave)="ndisp()">
+                        <a routerLink="/inspection" (click)="data()">Inspection Quality Check</a>
+                        <a routerLink="/preservation" (click)="data()">Preservation Work Order Quality Check</a>
+                        <a routerLink="/estimate creation or bid submission" (click)="data()">Estimate Creation or Bid Submission</a>
+                        <a routerLink="/proprty level review" (click)="data()">Property Level Review</a>
+                        <a routerLink="/landscaping management" (click)="data()">Landscaping Management / Seasonal Activities</a>
+                        <a routerLink="/communication" (click)="data()">Verbal and Written Communication</a>
+                        <a routerLink="/value added services" (click)="data()">Value Added Services</a>
                     </div>
                 </div>
             </li>
@@ -51,8 +51,8 @@
             <li><a href="#">Verbal and Written Communication</a></li>
             <li><a href="#">Value Added Services</a></li>
           </ul> -->
-            <li><button class="dropbtn">Contact Us</button></li>
+            <li (mouseover)="ndisp()"><button (click)="contactroute()" class="dropbtn">Contact Us</button></li>
         </ul>
-        <h1 class="logo"><img src="assets/bfs_logo.jpg"></h1>
+        <h1 class="logo"><a  routerLink="/"><img src="assets/bfs_logo.jpg" id="img"></a></h1>
     </div>
 </nav>

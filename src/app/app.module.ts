@@ -15,6 +15,7 @@ import { ReviewComponent } from './review/review.component';
 import { LandscapingComponent } from './landscaping/landscaping.component';
 import { CommunicationComponent } from './communication/communication.component';
 import { ValueaddedComponent } from './valueadded/valueadded.component';
+import { ContactUsComponent } from './contact-us/contact-us.component';
 
 @NgModule({
   declarations: [
@@ -30,7 +31,8 @@ import { ValueaddedComponent } from './valueadded/valueadded.component';
     ReviewComponent,
     LandscapingComponent,
     CommunicationComponent,
-    ValueaddedComponent
+    ValueaddedComponent,
+    ContactUsComponent
   ],
   imports: [
     BrowserModule,

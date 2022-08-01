@@ -538,6 +538,7 @@ input {
 
 img {
     height: 40px;
+    cursor: pointer;
 }
 
 .container {
@@ -609,3 +610,10 @@ img {
 .dropdown:hover .dropbtn {
     background-color: #fff;
 }
+/* a:active .dropdown:hover .dropdown-content{
+  display: none;
+  color:yellow;
+} */
+/* .dropdown-content a:active{
+  display: none;
+} */

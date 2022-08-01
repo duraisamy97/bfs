@@ -10,7 +10,9 @@ export class ContentsComponent implements OnInit {
   constructor() { }
 
   ngOnInit(): void {
-    
+    window.onbeforeunload = function () {
+      window.scrollTo(0, 0);
+    }
   }
 con(){
   console.log('durai')
